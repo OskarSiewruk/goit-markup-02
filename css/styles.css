@@ -4,6 +4,10 @@
 --button-color:#212121 ;
 }
 
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
 .header-logo {
 	display: inline-block;
 }
@@ -21,7 +25,9 @@
 .header-nav-link:focus,
 .header-logo-link:focus,
 .header-mail:focus,
-.header-phone:focus {
+.header-phone:focus,
+.footer-logo-link:hover,
+.footer-logo-link:focus {
     color:var(--choose-color);
 }
 
