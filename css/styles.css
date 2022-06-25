@@ -52,6 +52,8 @@ body {
 .header-phone {
 	color: var(--contact-color);
 	text-decoration: none;
+	line-height: 1.14;
+	font-size: 14px;
 }
 
 .header-nav-link:visited,
@@ -74,6 +76,60 @@ body {
 .button-solution,
 .aside-list-button {
 border: var(--background-button-color);
+}
+
+.solution-section {
+	background-color: var(--footer-background-color);
+}
+
+.solution-header {
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+	text-transform: uppercase;
+	color: var(--backgr-color);
+}
+
+.button-solution {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.875;
+	color: var(--backgr-color);
+	background-color: var(--choose-color);
+}
+
+.service-header {
+	color: var(--button-color);
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1.14;
+	text-transform: uppercase;
+}
+
+.service-description {
+	color: var(--contact-color);
+	font-size: 14px;
+	line-height: 1.71;
+}
+
+.section-header {
+	color: var(--button-color);
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.16;
+}
+
+.team-name-header {
+	color: var(--button-color);
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.187;
+}
+
+.team-name-description {
+	color: var(--contact-color);
+	font-size: 16px;
+	line-height: 1.187;
 }
 
 .aside-list,
