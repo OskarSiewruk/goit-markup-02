@@ -1,33 +1,52 @@
 :root {
---choose-color:#2196F3 ;
---background-button-color:#F5F4FA ;
---button-color:#212121 ;
---contact-color: #757575;
---backgr-color:#fff;
---text-color: #000;
---rgba-opacity-color: rgba(255, 255, 255, 0.6);
---footer-background-color: #2F303A;
+	--choose-color: #2196f3;
+	--background-button-color: #f5f4fa;
+	--button-color: #212121;
+	--contact-color: #757575;
+	--backgr-color: #fff;
+	--text-color: #000;
+	--rgba-opacity-color: rgba(255, 255, 255, 0.6);
+	--footer-background-color: #2f303a;
+	--color-border: #eee;
+	--border-header: #ececec;
 }
 
 body {
-	font-family: 'Roboto', 'Times New Roman', sans-serif;
+	font-family: "Roboto", "Times New Roman", sans-serif;
 	background-color: var(--backgr-color);
 	color: var(--text-color);
+	width: 1600px;
+}
+
+.header {
+	display: block;
+	height: 80px;
+	border-bottom: 1px solid var(--border-header);
 }
 
 .header-logo {
 	display: inline-block;
+	margin-top: 24px;
+	margin-bottom: 25px;
 }
 
 .header-nav {
 	display: inline-block;
-	width: 300px;
-	text-align: center;
+	height: 80px;
 }
 
 .nav-list > li {
-	display: inline-block;
 	list-style: none;
+	height: 16px;
+}
+
+.nav-list {
+	display: flex;
+	gap: 46px;
+	padding: 0;
+	margin-left: 93px;
+	margin-top: 32px;
+	margin-bottom: 32px;
 }
 
 .header-nav-link:hover,
@@ -38,7 +57,7 @@ body {
 .header-phone:focus,
 .footer-contact:hover,
 .footer-contact:focus {
-    color:var(--choose-color);
+	color: var(--choose-color);
 	text-decoration: none;
 }
 
@@ -56,6 +75,14 @@ body {
 	font-size: 14px;
 }
 
+.header-mail {
+	margin-left: 364px;
+}
+
+.header-phone {
+	margin-left: 50px;
+}
+
 .header-nav-link:visited,
 .header-logo-link:visited,
 .header-mail:visited,
@@ -68,18 +95,19 @@ body {
 .button-solution:focus,
 .aside-list-button:hover,
 .aside-list-button:focus {
-    background-color: var(--choose-color);
-    color: var(--background-button-color);
-    border: var(--background-button-color);
+	background-color: var(--choose-color);
+	color: var(--background-button-color);
+	border: var(--background-button-color);
 }
 
 .button-solution,
 .aside-list-button {
-border: var(--background-button-color);
+	border: var(--background-button-color);
 }
 
 .solution-section {
 	background-color: var(--footer-background-color);
+	height: 600px;
 }
 
 .solution-header {
@@ -140,15 +168,48 @@ border: var(--background-button-color);
 	list-style: none;
 }
 
-.aside-list > li {
-	display: inline-block;
-	width: 100px;
+.back-container {
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.portfolio-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	padding: 0;
+	justify-content: center;
+}
+
+.portfolio-list-container {
+	margin: 0;
+}
+
+.portfolio-list-container > img {
+	display: block;
+}
+
+.container{
+	width: 1200px;
+	margin-left: 215px;
+	margin-right: auto;
+}
+
+.aside-list {
+	display: flex;
+	gap: 8px;
+	padding: 0;
+	justify-content: center;
 }
 
 .aside-list-button {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.625;
+	border-radius: 4px;
+	height: 38px;
+	width: 121px;
 }
 
 .click {
@@ -157,7 +218,7 @@ border: var(--background-button-color);
 
 .header-logo-link,
 .footer-logo-link {
-	font-family: 'Raleway', sans-serif;
+	font-family: "Raleway", sans-serif;
 	font-size: 26px;
 	font-weight: 700;
 	line-height: 1.19;
@@ -182,12 +243,16 @@ address {
 	color: var(--backgr-color);
 	font-size: 14px;
 	line-height: 1.7;
+	margin-top: 20px;
 }
 
 .footer-contact {
-color: var(--rgba-opacity-color);
-line-height: 1.7;
-font-size: 14px;
+	color: var(--rgba-opacity-color);
+	line-height: 1.7;
+	font-size: 14px;
+	display: block;
+	width: 231px;
+	margin-top: 9px;
 }
 
 .footer-tel-contact {
@@ -196,6 +261,7 @@ font-size: 14px;
 
 footer {
 	background-color: var(--footer-background-color);
+	height: 252px;
 }
 
 .portfolio-list-header {
@@ -209,4 +275,19 @@ footer {
 	font-size: 16px;
 	line-height: 1.875;
 	color: var(--contact-color);
+}
+
+.portfolio-section-description {
+	border: 1px solid var(--color-border);
+	width: 370px;
+}
+
+.footer-properties {
+	margin-left: 215px;
+}
+
+.footer-logo {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 60px;
 }
